@@ -55,6 +55,9 @@ function App() {
        
     }
 
+  setTimeout(()=>{
+    getw()
+  },1000)
    
 
   return (
