@@ -8,7 +8,7 @@
 }
 .main
 {
-    background-image:linear-gradient(120deg,rgba(0, 102, 255, 0.727), rgb(0, 0, 0));
+    background-image:linear-gradient(120deg,rgba(0, 102, 255, 0.727), rgb(223, 219, 219));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,12 +29,15 @@
 }
 .box div:nth-of-type(1)
 {
-    background-color: var(--lightblue);
+    background-color: rgba(0, 0, 0, 0.586);
     height: 15%;
     font-family: 'Press Start 2P', cursive;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
 .box div:nth-of-type(1) h1
 {
@@ -44,7 +47,6 @@
 }
 .box div:nth-of-type(2)
 {
-    background-image: url("./7716.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 70%;
@@ -54,7 +56,7 @@
 }
 .box div:nth-of-type(2) nav
 {
-    background-color: rgba(0, 0, 0, 0.644);
+    background-color: rgba(241, 238, 238, 0.942);
     height:100%;
 }
 .box div:nth-of-type(3)
@@ -71,13 +73,28 @@
 {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   overflow-y: scroll;
+   overflow-y:auto;
+   box-sizing: border-box;
+   padding-left:20px;
 }
 .message::-webkit-scrollbar
 {
-    display:none;
+    width:10px;
 }
+.message::-webkit-scrollbar-track {
+    background: rgba(101, 99, 99, 0.818); 
+ 
+  }
+   
+  /* Handle */
+  .message::-webkit-scrollbar-thumb {
+    background: rgb(36, 34, 34); 
+    border-radius: 10px;
+  }
+  .message::-webkit-scrollbar-thumb:hover
+  {
+    background:rgba(0, 0, 0, 0.493);
+  }
 
 .message p
 {
@@ -85,10 +102,12 @@
     font-size: 17px;
     letter-spacing: 1px;
     margin:10px;
-    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
     padding-left: 5px;
     padding-right: 5px;
     box-sizing: border-box;
+    border-bottom: 2px dotted black;
+    width: 30%;
 }
 .box div:nth-of-type(3) input
 {
@@ -114,4 +133,9 @@
     color: white;
     font-size:17px;
     margin-left: 10px;
+}
+.box div:nth-of-type(3) i:active
+{
+    color: rgba(54, 238, 17, 0.664);
+    margin-top:5px;
 }
