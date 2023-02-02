@@ -73,7 +73,7 @@ function App() {
                 datag != [] ? datag.map((e) => { return (<p>{e.chat}</p>) }) : null
 
               }
-              <p>hello</p>
+
 
             </nav>
           </div>
@@ -105,7 +105,7 @@ function App() {
 
               type="text"></input>
             <i onClick={() => {
-              
+
               if (chat_type.current.value != "") {
                 set()
 
